@@ -5,7 +5,7 @@ def get_selected_items():
 
     if selected_items:
         for item in selected_items:
-            print(item)
+            cmds.setAttr(f"{item}.translateY", 0)
     else:
         print("Nothing selected")
 
